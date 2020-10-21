@@ -1,0 +1,26 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Identity.EntityFrameworkCore
+
+@inject SignInManager<IdentityUser> SignInManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <li class="nav-item">
+        <form method="post" asp-controller="account" asp-action="logout">
+            <button type="submit" style="width:auto"
+                    class="nav-link btn btn-link py-0">
+                Sair @User.Identity.Name
+            </button>
+        </form>
+    </li>
+}
+else
+{
+
+    <li class="nav-item">
+        <a class="nav-link" asp-controller="account" asp-action="login">
+            ÁREA RESTRITA
+        </a>
+    </li>
+}
+

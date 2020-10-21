@@ -1,0 +1,42 @@
+﻿@model ProjetoAM4.Models.Email
+
+@{
+    ViewData["Title"] = "Responder o email";
+}
+
+<h4>Email</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Respond">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="To" class="control-label"></label>
+                <input asp-for="To" value="@Model.To" readonly class="form-control" />
+                <span asp-validation-for="To" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Subject" class="control-label"></label>
+                <input asp-for="Subject" class="form-control" />
+                <span asp-validation-for="Subject" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Body" class="control-label"></label>
+                <textarea asp-for="Body" class="form-control" rows="3" cols="15"></textarea>
+                <span asp-validation-for="Body" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Enviar Resposta" class="btn btn-primary" />
+            </div>
+
+        </form>
+    </div>
+</div>
+@if (ViewBag.Message != null)
+{
+    <span class="alert alert-success">@ViewBag.Message</span>
+}
+<hr />
+<div>
+    <a asp-controller="admin" asp-action="fale-conosco">Voltar</a>
+</div>

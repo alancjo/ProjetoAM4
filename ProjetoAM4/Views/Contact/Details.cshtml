@@ -1,0 +1,80 @@
+﻿@model ProjetoAM4.Models.Contact
+
+<h2>Detalhes</h2>
+<table class="table table-bordered table-striped">
+    <tbody>
+        <tr>
+            <th width="200">Id</th>
+            <td>@Model.ContactId</td>
+        </tr>
+        <tr>
+            <th>Nome</th>
+            <td>@Model.Name</td>
+        </tr>
+        <tr>
+            <th>Data de Nascimento</th>
+            <td>@Model.Birth</td>
+        </tr>
+        <tr>
+            <th>CPF</th>
+            <td>@Model.CPF</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>@Model.Email</td>
+        </tr>
+        <tr>
+            <th>Telefone</th>
+            <td>@Model.Telephone</td>
+        </tr>
+        <tr>
+            <th>CEP</th>
+            <td>@Model.CEP</td>
+        </tr>
+        <tr>
+            <th>Rua</th>
+            <td>@Model.Street</td>
+        </tr>
+        <tr>
+            <th>Número</th>
+            <td>@Model.HouseNumber</td>
+        </tr>
+        <tr>
+            <th>Complemento</th>
+            <td>@Model.Complement</td>
+        </tr>
+        <tr>
+            <th>Bairro</th>
+            <td>@Model.District</td>
+        </tr>
+        <tr>
+            <th>Cidade</th>
+            <td>@Model.City</td>
+        </tr>
+        <tr>
+            <th>Motivo da Mensagem</th>
+            <td>@Model.MotiveMessage</td>
+        </tr>
+        <tr>
+            <th>Mensagem</th>
+            <td><span style="word-break: break-all;">@Html.Raw(Model.Message)</span></td>
+        </tr>
+        <tr>
+            <th>Data do Registro</th>
+            <td>@Model.RegistrationDate</td>
+        </tr>
+    </tbody>
+
+
+
+
+
+</table>
+
+<div class="btn btn-primary">
+    <a href="javascript:void(0)" onclick="window.history.back()">
+        <strong style="color:white">Retornar</strong>
+    </a>
+</div>
+
+<a asp-action="Respond" asp-controller="Contact" asp-route-id="@Model.ContactId" class="btn btn-success">Responder</a>

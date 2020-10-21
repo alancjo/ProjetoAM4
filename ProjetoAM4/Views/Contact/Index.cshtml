@@ -1,0 +1,109 @@
+﻿@model List<ProjetoAM4.Models.Contact>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Contatos Realizados</h2>
+
+<table class="table-bordered table">
+
+    <tr>
+        <th>ID</th>
+        <th width="200">Nome</th>
+        <th>Número</th>
+        <th>Email</th>
+        <th>Data do Envio</th>
+        <th>Título/Motivo</th>
+        <th style="text-align:center">Ações</th>
+    </tr>
+    @foreach (var contact in Model)
+    {
+        <tr>
+            <td>@contact.ContactId</td>
+            <td>@contact.Name</td>
+            <td>@contact.Telephone</td>
+            <td>@contact.Email</td>
+            <td>@contact.RegistrationDate</td>
+            <td>@contact.MotiveMessage</td>
+            <td>
+                <a asp-action="Details" asp-controller="Contact" asp-route-id="@contact.ContactId" class="btn btn-primary">Ver</a>
+                <a class="btn btn-danger deleteId" data-id="@contact.ContactId">Excluir</a>
+            </td>
+        </tr>
+    }
+
+</table>
+
+@section Scripts{
+    <script>
+        $('.deleteId').click(function () {
+            var id = $(this).attr("data-id");
+
+            const swalWithBootstrapButtons = Swal.mixin({
+                customClass: {
+                    confirmButton: 'btn btn-success',
+                    cancelButton: 'btn btn-danger'
+                },
+                buttonsStyling: false
+            })
+
+            swalWithBootstrapButtons.fire({
+                title: 'Você tem certeza desta ação?',
+                text: "Você não poderá reverter isso",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonText: 'Sim, deletar!',
+                cancelButtonText: 'Não, cancelar!',
+                reverseButtons: true
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.ajax({
+                    url: '@Url.Action("Delete","Contact")',
+                    data: { id: id },
+                    type: 'POST',
+                    success: function (data) {
+                        if (data.status) {
+                            swalWithBootstrapButtons.fire(
+                                'Deletado!',
+                                data.Msg,
+                                'success'
+
+                            )
+                            setTimeout(function () {
+                                window.location.reload();
+                            }, 800);
+                        } else {
+                            swalWithBootstrapButtons.fire(
+                                'Erro!',
+                                data.Msg,
+                                'danger'
+                            )
+                        }
+
+                    },
+                        error: function (data) {
+                            swalWithBootstrapButtons.fire(
+                                'Erro!',
+                                'erro ao excluir',
+                                'danger'
+                            )
+
+                        }
+                    });
+                } else if (
+
+                    result.dismiss === Swal.DismissReason.cancel
+                ) {
+                    swalWithBootstrapButtons.fire(
+                        'Cancelado',
+                        'O contato não foi excluido',
+                        'error'
+                    )
+                }
+            })
+
+        });
+    </script>
+}
+

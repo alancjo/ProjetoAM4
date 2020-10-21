@@ -1,0 +1,91 @@
+﻿@model ProjetoAM4.Models.Contact
+@using ProjetoAM4.Enums
+
+@{
+    ViewData["Title"] = "FaleConosco";
+}
+
+<h3>Preencha o Formulário</h3>
+@if (ViewBag.Message != null)
+{
+    <span class="alert alert-success">@ViewBag.Message</span>
+}
+
+<hr />
+<form id="form" asp-action="Create" asp-controller="Contact" asp-antiforgery="true" method="post">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" placeholder="Informe o nome" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Birth"></label>
+        <input asp-for="Birth" id="date" type="text" class="form-control"/>
+        <span asp-validation-for="Birth" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="CPF"></label>
+        <input asp-for="CPF" id="CPF" class="form-control CPF" placeholder="Informe o CPF" />
+        <span asp-validation-for="CPF" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" placeholder="Informe o email" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Telephone"></label>
+        <input asp-for="Telephone" type="tel" id="phone_with_ddd" class="form-control" autocomplete="off" placeholder="Celular" required />
+        <span asp-validation-for="Telephone" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="CEP"></label>
+        <input asp-for="CEP" id="cep" class="form-control" placeholder="CEP" />
+        <span asp-validation-for="CEP" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Street"></label>
+        <input asp-for="Street" class="form-control" placeholder="Rua" />
+        <span asp-validation-for="Street" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="HouseNumber"></label>
+        <input asp-for="HouseNumber" type="number" class="form-control" placeholder="Número da residência" />
+        <span asp-validation-for="HouseNumber" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Complement"></label>
+        <input asp-for="Complement" class="form-control" placeholder="Complemento" />
+    </div>
+    <div class="form-group">
+        <label asp-for="District"></label>
+        <input asp-for="District" class="form-control" placeholder="Bairro" />
+        <span asp-validation-for="District" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="City"></label>
+        <input asp-for="City" class="form-control" placeholder="Cidade" />
+        <span asp-validation-for="City" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="State"></label>
+        <select class="form-control" asp-for="State" asp-items="@Html.GetEnumSelectList<SelectState>()">
+            <option selected="selected" value="">Selecione o Estado</option>
+        </select>
+        <span asp-validation-for="State" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MotiveMessage"></label>
+        <select class="form-control" asp-for="MotiveMessage" asp-items="@Html.GetEnumSelectList<TypeMotive>()" id="motive">
+            <option selected="selected">Selecione o Motivo</option>
+        </select>
+        <span asp-validation-for="MotiveMessage" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Message"></label>
+        <textarea class="form-control" asp-for="Message" placeholder="Mensagem" required spellcheck="false" rows="8" cols="80"></textarea>
+        <span asp-validation-for="Message" class="text-danger"></span>
+    </div>
+    <input type="submit" value="Enviar Formulário" class="btn btn-primary" />
+</form>
+
