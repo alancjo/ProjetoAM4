@@ -6,8 +6,8 @@ Asp.net core 3+
 MVC (Model, View, Controller)
 Sql Server (Caso não tenha, baixe o Sql Server Community)  
 ```
-<hr>
-### 2 - Fale Conosco
+
+## 2 - Fale Conosco
 <p>Desenvolver uma página web com um formulário de “Fale conosco”. O link da página deverá  ter: “/fale-conosco” Ex.: <Projeto>/ fale-conosco.  
   É necessário fazer um envio SMTP.</p>
   
@@ -73,10 +73,25 @@ o Mensagem (textarea simples)
     </tr>    
   </tbody>
 </table>
-  
 
+## 5 - Diferenciais 
+<p> Os diferenciais listados abaixo não são obrigatórios, entretantom contarão como pontos extras. </p>
+<ul>
+  <li>Criar uma área restrita para a listagem do Fale Conosco (só dando para acessar o link  mediante a login e senha);</li>
+  <li>Usar o Identity para fazer o Login;</li>
+  <li>Organização visual do Formulário e das tabelas;</li>
+  <li>Nos fornecer o código via GIT Também (pode ser no GITHUB);</li>
+  <li>Criar uma área de responder os e-mails (Disparando via SMTP);</li>
+  <li>Criar uma área de responder os e-mails (Disparando via SMTP);
+  <li>Realizar exclusão lógica.</li>
+</ul>
 
-
+### Dica:
+<ul>
+  <li>Use um Visual Studio mais recente para ajudar no Desenvolvimento; </li>
+  <li>Utilize o SMTP do google para fazer os envios;</li>
+  <li>Pode utilizar bibliotecas como o Bootstrap de estilo para auxiliar no Front End (Não  precisar ser nada bem elaborado).</li>
+</ul>
 
 
 
