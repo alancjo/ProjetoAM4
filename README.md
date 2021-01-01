@@ -6,6 +6,7 @@ Asp.net core 3+
 MVC (Model, View, Controller)
 Sql Server (Caso não tenha, baixe o Sql Server Community)  
 ```
+</hr>
 ### 2 - Fale Conosco
 <p>Desenvolver uma página web com um formulário de “Fale conosco”. O link da página deverá  ter: “/fale-conosco” Ex.: <Projeto>/ fale-conosco.  
   É necessário fazer um envio SMTP.</p>
