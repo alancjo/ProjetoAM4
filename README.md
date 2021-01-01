@@ -96,14 +96,15 @@ MENSAGEM
   <li>Pode utilizar bibliotecas como o Bootstrap de estilo para auxiliar no Front End (Não  precisar ser nada bem elaborado).</li>
 </ul>
 
-</hr>
+<hr>
 
-```
+
 <p>Primeiramente, estou disponibilizando este repositório para ajudar devs iniciantes que se deparam com problemas similares em um processo seletivo.
 Podendo ser aplicado em qualquer linguagem de programação back-end. Qualquer dúvida fico a disposição para trocarmos conhecimento.</p>
-``` 
 
-</hr>
+
+<hr>
+
 <h2 style="color:gray; font-weight: 700">O que eu aprendi?</h2>
 
 <p>Neste projeto pude aprender o funcionamento básico de uma linguagem fortemente tipada, orientada e objetos e compilada. Antes deste desafio, as linguagens na qual tive contato eram JavaScript, PHP e, principalmente, Python.</br></br>
