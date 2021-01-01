@@ -98,7 +98,7 @@ MENSAGEM
 
 <hr>
 
-
+<h4> Próposito do repositório </h4>
 <p>Primeiramente, estou disponibilizando este repositório para ajudar devs iniciantes que se deparam com problemas similares em um processo seletivo.
 Podendo ser aplicado em qualquer linguagem de programação back-end. Qualquer dúvida fico a disposição para trocarmos conhecimento.</p>
 
