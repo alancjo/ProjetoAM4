@@ -12,30 +12,31 @@ Sql Server (Caso não tenha, baixe o Sql Server Community)
   É necessário fazer um envio SMTP.</p>
   
 <h4>Tal formulário precisa ter os seguintes campos:</h4>
+
 ```
 DADOS PESSOAIS
-o Nome  
-o Data de Nascimento (com máscara de data padrão dd/mm/yyyy)  
-o CPF (com máscara e validação de CPF)  
-o E-mail (com validação)  
-o Celular (com máscara de tel.) 
+→ Nome  
+→ Data de Nascimento (com máscara de data padrão dd/mm/yyyy)  
+→ CPF (com máscara e validação de CPF)  
+→ E-mail (com validação)  
+→ Celular (com máscara de tel.) 
 ```
 
 ```
 ENDEREÇO
-o CEP  
-o Rua  
-o Numero  
-o Complemento  
-o Bairro  
-o Cidade (campo de texto, para facilitar)  
-o Estado (combobox/Select/Dropdown com os estados)  
+→ CEP  
+→ Rua  
+→ Numero  
+→ Complemento  
+→ Bairro  
+→ Cidade (campo de texto, para facilitar)  
+→ Estado (combobox/Select/Dropdown com os estados)  
 ```
 
 ```
 MENSAGEM 
-o Título/Motivo da Mensagem  
-o Mensagem (textarea simples) 
+→ Título/Motivo da Mensagem  
+→ Mensagem (textarea simples) 
 ```
 
 ## 3 - Listagem do fale conosco
