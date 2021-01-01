@@ -2,9 +2,9 @@
 
 ## 1 - Requisitos Obrigatórios
 ```
-Asp.net core 3+
-MVC (Model, View, Controller)
-Sql Server (Caso não tenha, baixe o Sql Server Community)  
+→ Asp.net core 3+
+→ MVC (Model, View, Controller)
+→ Sql Server (Caso não tenha, baixe o Sql Server Community)  
 ```
 
 ## 2 - Fale Conosco
