@@ -20,6 +20,7 @@ o CPF (com máscara e validação de CPF)
 o E-mail (com validação)  
 o Celular (com máscara de tel.) 
 ```
+
 ```
 ENDEREÇO
 o CEP  
@@ -30,6 +31,7 @@ o Bairro
 o Cidade (campo de texto, para facilitar)  
 o Estado (combobox/Select/Dropdown com os estados)  
 ```
+
 ```
 MENSAGEM 
 o Título/Motivo da Mensagem  
