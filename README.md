@@ -133,5 +133,5 @@ dos campos foram todas feitas pela biblioteca <a href="https://igorescobar.githu
 Adicionei links das fontes que consultei no decorrer do projeto, documentações e tutoriais. É só clicar no nome de cada uma.
 ```
 
-<h2>Obrigado por sua visita! :D</h2>
+<h2>Obrigado por sua visita!<span style='font-size:100px;'>&#128512;</span></h2>
 
