@@ -104,20 +104,24 @@ Podendo ser aplicado em qualquer linguagem de programação back-end. Qualquer d
 <p>Neste projeto pude aprender o funcionamento básico de uma linguagem fortemente tipada, orientada e objetos e compilada. Antes deste desafio, as linguagens na qual tive contato eram JavaScript, PHP e, principalmente, Python.</br>
 O projeto é um CRUD(Create, Read, Update, Delete) para o envio das famosas mensagens de <strong>Fale Conosco</strong>. Foi criado uma área de admin para 
 gerenciamento das mensagens com Identity Framework, já o relacionamento com o Banco de Dados e as Classes foi feita pelo ORM Entity Framework. As validações
-dos campos foram todas feitas pela biblioteca <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/hr" target"_blank">JQuery do brasileiro Igor Escobar, menos a validação de CPF que foi feita no próprio back-end com C#. </br> O Front-end da aplicação foi feito com a framework CSS Bootstrap e disparo de alerta com o sweet alert com requisições Ajax</p>
+dos campos foram todas feitas pela biblioteca <a href="https://igorescobar.github.io/jQuery-Mask-Plugin/">JQuery do brasileiro Igor Escobar </a>, menos a validação de CPF que foi feita no próprio back-end com C#. </br> O Front-end da aplicação foi feito com a framework CSS Bootstrap e disparo de alerta com o sweet alert com requisições Ajax</p>
 <h4> Tecnologias utilizadas </h4>
 <ul>
-  <li>Linguagem <strong>C#</strong></li>
-  <li>Linguagem <strong>JavaScript</strong></li>
-  <li>Linguagem de marcação <strong>HTML</strong>
-  <li>Plataforma <strong>.NET</strong></li>
-  <li>Framework <strong>Asp. Net Core 3.1</strong></li>
-  <li>Framework <strong>Bootstrap</strong></li>
-  <li>Framework ORM <strong>Entity Framework</strong></li>  
-  <li>Disparo de Alertas com <strong>Sweet Alert</strong></li>  
-  <li>Área de admin com <strong>Identity Framework</strong></li>
-  <li>Disparo email <strong>SMTP do google<strong></li>
+  <li>Linguagem <strong><a href="https://docs.microsoft.com/pt-br/dotnet/csharp/" target="_blank">C#</strong></a></li>
+  <li>Linguagem <strong><a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">JavaScript</strong></a></li>
+  <li>Linguagem de marcação <strong><a href="https://www.w3schools.com/html/" target="_blank">HTML</strong></a></li>
+  <li>Plataforma <strong><a href="https://docs.microsoft.com/pt-br/dotnet/" target="_blank">.NET</strong></a></li>
+  <li>Framework <strong><a href="https://docs.microsoft.com/pt-br/aspnet/core/?view=aspnetcore-5.0" target="_blank">Asp. Net Core 3.1</strong></a></li>
+  <li>Framework <strong><a href="https://getbootstrap.com.br/docs/4.1/getting-started/introduction/" target="_blank">Bootstrap</strong></a></li>
+  <li>Framework ORM <strong><a href="https://docs.microsoft.com/pt-br/ef/#:~:text=O%20Entity%20Framework%20Core%20%C3%A9,NET.&text=O%20EF%20Core%20funciona%20com,e%20o%20Azure%20Cosmos%20DB." target="_blank">Entity Framework</strong></a></li>  
+  <li>Disparo de Alertas com <strong><a href="https://sweetalert2.github.io/" target="_blank">Sweet Alert</strong></a></li>  
+  <li>Área de admin com <strong><a href="https://docs.microsoft.com/en-us/ef/" target="_blank">Identity Framework</strong></a></li>
+  <li>Disparo email <strong><a href="https://www.hostinger.com.br/tutoriais/aprenda-a-utilizar-o-smtp-google/" target="_blank">SMTP do google<strong></a></li>
 </ul>
+    
+```
+Adicionei links das fontes que consultei no decorrer do projeto, documentações e tutoriais. É só clicar no nome de cada uma.
+```
 
 <h2>Obrigado por sua visita! :D</h2>
 
