@@ -85,7 +85,6 @@ MENSAGEM
   <li>Organização visual do Formulário e das tabelas;</li>
   <li>Nos fornecer o código via GIT Também (pode ser no GITHUB);</li>
   <li>Criar uma área de responder os e-mails (Disparando via SMTP);</li>
-  <li>Criar uma área de responder os e-mails (Disparando via SMTP);
   <li>Realizar exclusão lógica.</li>
 </ul>
 
